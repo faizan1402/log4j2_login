@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+<Properties>
+    <Property name="filename">./logs</Property> <!-- logs folder create-->
+  </Properties>
+
+	<Appenders>
+	<!-- create the logdemo.log files ,using time formate--> 
+		<RollingFile name="file" fileName="${filename}/logdemo.log" filePattern="${filename}/logdemo-%d{HH-mm-ss.SSS}.log">
+			<PatternLayout>
+				<pattern>%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n</pattern>
+			</PatternLayout>
+			<SizeBasedTriggeringPolicy size="1 KB" />
+		</RollingFile>
+
+		<Console name="ABC" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+		</Console>
+	</Appenders>
+	<Loggers>
+		<Logger name="recdemo1" level="trace" additivity="false">
+			<AppenderRef ref="ABC" />
+			<AppenderRef ref="file" />
+		</Logger>
+		<Root level="trace">
+			<AppenderRef ref="ABC" />
+			<AppenderRef ref="file" />
+		</Root>
+	</Loggers>
+</Configuration>
+
+<!-- this xml is custom logger-->
+<!--if additivity false then no duplicate logs print and if addditivity true then logs adding duplicate logs because
+root is the parent node and if additivity true so root level trace twice print
+-->

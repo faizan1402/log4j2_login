@@ -1,0 +1,14 @@
+12:04:22.283 [main] DEBUG recdemo1.LoginDemoSecond - This is debug
+12:04:22.289 [main] FATAL recdemo1.LoginDemoSecond - This is fatal
+12:10:27.517 [main] INFO  recdemo1.LoginDemoSecond - Click Successfull
+12:10:27.517 [main] ERROR recdemo1.LoginDemoSecond - DB Connection Failed
+12:10:27.520 [main] DEBUG recdemo1.LoginDemoSecond - This is debug
+12:10:27.520 [main] FATAL recdemo1.LoginDemoSecond - This is fatal
+12:10:27.520 [main] INFO  recdemo1.LoginDemoSecond - Click Successfull
+12:10:27.520 [main] ERROR recdemo1.LoginDemoSecond - DB Connection Failed
+12:10:27.520 [main] DEBUG recdemo1.LoginDemoSecond - This is debug
+12:10:27.520 [main] FATAL recdemo1.LoginDemoSecond - This is fatal
+12:10:27.521 [main] INFO  recdemo1.LoginDemoSecond - Click Successfull
+12:10:27.521 [main] ERROR recdemo1.LoginDemoSecond - DB Connection Failed
+12:10:27.521 [main] DEBUG recdemo1.LoginDemoSecond - This is debug
+12:10:27.521 [main] FATAL recdemo1.LoginDemoSecond - This is fatal
